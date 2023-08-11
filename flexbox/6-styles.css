@@ -213,7 +213,7 @@
 
 /* Apply margin to all .nav-item elements except the first one */
 .nav > .nav-item + .nav-item {
-  margin: var(--nav-item-margin);
+  margin: 0 0 0 2rem; /* The margin declaration was moved here */
 }
 
 /* Styles for each navigation menu item */
@@ -222,7 +222,6 @@
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
   letter-spacing: var(--nav-item-letter-spacing);
-  /* Removed display declaration */
 }
 
 /* Styles for navigation links */
@@ -256,15 +255,13 @@
   width: 100%;
 }
 
-/* Variables
-   ============================= */
+/* Variables */
 
-/* ... other variables ... */
-
-/* Change the value of nav-item-margin */
+/* The value of the variable nav-item-margin was changed to 0 0 0 2rem */
 :root {
   --nav-item-margin: 0 0 0 2rem;
 }
+
 
   
   /* Header
