@@ -392,7 +392,10 @@
       
       /* New selector targeting .nav .nav-item + .nav-item */
       .nav .nav-item + .nav-item {
-          margin: var(--nav-item-margin);
+        font-family: var(--nav-item-font-family);
+        font-weight: var(--nav-item-font-weight);
+        font-size: var(--nav-item-font-size);
+        margin: var(--nav-item-margin);
           /* Add additional styles as needed */
       }
   
