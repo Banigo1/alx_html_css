@@ -222,6 +222,7 @@
   font-weight: var(--nav-item-font-weight);
   font-size: var(--nav-item-font-size);
   letter-spacing: var(--nav-item-letter-spacing);
+  display: none; /* The display declaration was removed */
 }
 
 /* Styles for navigation links */
