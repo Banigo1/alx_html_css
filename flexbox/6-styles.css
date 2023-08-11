@@ -199,57 +199,73 @@
   .col-1-2 {
     width: calc((100% / 2) - 2rem);
   }
-  
   /* Navbar
-      ============================= */
-  
-  
-  .nav {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-  }
+   ============================= */
 
-  .nav >  .nav-item + .nav-item{
-    margin: var(--nav-item-margin);
+/* Styles for the entire navigation menu */
+.nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
-  
-  .nav .nav-item {
-    font-family: var(--nav-item-font-family);
-    font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
-    letter-spacing: var(--nav-item-letter-spacing);
-   
-  }
-  
-  .nav .nav-link {
-    display: block;
-    padding: 0.5rem 0;
-    position: relative;
-  }
-  
-  .nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
-    text-decoration: none;
-  }
-  
-  .nav .nav-link::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: var(--color-white);
-    width: 0;
-    height: 0.2rem;
-    transition: var(--transition-duration) var(--transition-cubic-bezier);
-  }
-  
-  .nav .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary);
-    width: 100%;
-  }
+
+/* Apply margin to all .nav-item elements except the first one */
+.nav > .nav-item + .nav-item {
+  margin: var(--nav-item-margin);
+}
+
+/* Styles for each navigation menu item */
+.nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  /* Removed display declaration */
+}
+
+/* Styles for navigation links */
+.nav .nav-link {
+  display: block;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+/* Hover effect for navigation links */
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+  text-decoration: none;
+}
+
+/* Creating a pseudo-element before the link for a visual effect */
+.nav .nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 0;
+  height: 0.2rem;
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Hover effect for the pseudo-element on navigation item hover */
+.nav .nav-item:hover .nav-link::before {
+  background-color: var(--color-primary);
+  width: 100%;
+}
+
+/* Variables
+   ============================= */
+
+/* ... other variables ... */
+
+/* Change the value of nav-item-margin */
+:root {
+  --nav-item-margin: 0 0 0 2rem;
+}
+
   
   /* Header
       ============================= */
