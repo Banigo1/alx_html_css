@@ -222,6 +222,14 @@
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
    
+    /* Separate selector for .nav-item */
+.nav-item {
+  /* Your styles for .nav-item here */
+  /* For example: */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
   }
   
   .nav .nav-link {
