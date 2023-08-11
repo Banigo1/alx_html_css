@@ -1,4 +1,3 @@
-
 /* SUMMARY
     1. GLOBAL
     2. LAYOUT
@@ -62,11 +61,7 @@
   
     /** HEADER **/
     --header-padding: 4rem 0 0;
-    --header-logo-position: relative;
-    --header-logo-link-display: inline-block;
-    --header-logo-link-position: absolute;
-    --header-logo-link-top: -1rem;
-    --header-logo-link-left: 0;
+  
   
     /** FOOTER **/
     --footer-padding: 5rem 0 1rem;
@@ -77,7 +72,7 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
-    
+    --nav-item-margin: 0 0 0 2rem;
     --nav-item-link-hover: var(--color-white);
   
     /** BUTTON **/
@@ -180,52 +175,53 @@
   
   /* Grid
       ============================= */
-.row{
+
+ .row
+ {
     display: flex;
-}
+ }
   
   ul.row {
-    margin: 0;
+    margin: -1rem;
     padding: 0;
     list-style: none;
   }
   
   
   [class*='col-'] {
-    margin: 1rem;
+   margin: 1rem;
   }
   
   .col-1-3 {
-    calc((100% / 3) - 2rem);
+    width: calc((100% / 3) - 2rem);
   }
   
   .col-1-2 {
-    calc((100% / 2) - 2rem);
+    width: calc((100% / 2) - 2rem);
   }
   
   /* Navbar
       ============================= */
   
   
-
-  .nav-item{
-    margin: var(--nav-item-margin);
-  }
-  
   .nav {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
     text-align: center;
-    display: flex;
-    --nav-item-margin: 0 0 0 2rem;
   }
+
+  .nav >  .nav-item + .nav-item{
+    margin: var(--nav-item-margin);
+}
   
   .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
+   
   }
   
   .nav .nav-link {
@@ -257,11 +253,11 @@
   
   /* Header
       ============================= */
-
-      .header-container{
-        display: flex;
-        justify-content: space-between;
-      }
+.header-container
+{
+    display: flex;
+    justify-content: space-between;
+}      
   
   .header {
     padding: var(--header-padding);
@@ -269,7 +265,6 @@
          z-index: 3;
          background: transparent;
   }
-  
   
   
   /* Footer
@@ -369,18 +364,23 @@
   .section-hero .section-inner {
     padding: 10rem 40rem 2rem 0;
   }
+
+  /* Section Latest news
+      ============================= */
+      .section-latest-news .row
+      {
+        flex-direction: row-reverse;
+      }
+
+  /* Section SERVICES 
+     ============================== */
+     .section-services .row
+     {
+        flex-wrap: wrap;
+     }
   
   /*** 4. CARD ***/
-  /* Section SERVICES ============================= */
-  .section-services .row{
-    flex-wrap: wrap;
-  }
-
-  /* Section Latest news ============================= */
-   .row{
-    flex-direction: row-reverse;
-   }
-
+  
   /* Card (all styles)
       ============================= */
   
@@ -506,4 +506,3 @@
     font-size: 10rem;
     z-index: -1;
   }
-    
