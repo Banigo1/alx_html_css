@@ -385,16 +385,16 @@
      .section-services .row
      {
         flex-wrap: wrap;
-     }
-  
-  /*** 4. CARD ***/
-  
-  /* Card (all styles)
-      ============================= */
-  
-  .card-category {
-    color: var(--color-primary);
-  }
+      }
+
+      /*** 4. CARD ***/
+      /* ... (Previous code) ... */
+      
+      /* New selector targeting .nav .nav-item + .nav-item */
+      .nav .nav-item + .nav-item {
+          margin: var(--nav-item-margin);
+          /* Add additional styles as needed */
+      }
   
   /* Card WORK
       ============================= */
