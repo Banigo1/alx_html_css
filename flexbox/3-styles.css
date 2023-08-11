@@ -380,13 +380,12 @@
         flex-direction: row-reverse;
       }
 
-  /* Section SERVICES */
-#services.section-services .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
+  /* Section SERVICES 
+     ============================== */
+     .section-services .row
+     {
+        flex-wrap: wrap;
+     }
   
   /*** 4. CARD ***/
   
