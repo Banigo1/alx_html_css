@@ -1,9 +1,8 @@
-<<<<<<< HEAD
-This is repository contains...
-=======
-<<<<<<< HEAD
-This is repository contains ...
-=======
-This is repository contains...
->>>>>>> 2c25710e3321d5c99312cf5fb1e3b2a1f265234a
->>>>>>> 3e5384131b4820f0b72adbdd74cd23d0063bf44a
+This is repository contains five directories with various projects on HTML, CSS and flebox.
+
+- css_advanced
+- css_basic
+- html_advanced
+- html_basic and 
+- flexbox
+
