@@ -1,4 +1,4 @@
-### This is repository contains six directories with various projects on HTML, CSS and flebox.
+### This is repository contains directories with various projects on HTML, CSS and flebox.
 
 - css_advanced
 - css_basic
