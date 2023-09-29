@@ -1,3 +1,276 @@
-# CSS, advanced
+<!DOCTYPE html>
+<html lang="en">
 
-Responsive design
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body class="works-on-small-screens">
+        <section class="background-image">
+            <!--the header starts-->
+            <header class="header-container">
+                <a class="logo" href="smileschool.com"><img src="assets/logo.png" alt="LOGO"></a>
+
+                <!--NAVIGATIONS-->
+                <nav class="nav-menu">
+                    <a href="courses.html">COURSES</a>
+                    <a href="pricing.html">PRICING</a>
+                    <a href="login.html">LOGIN</a>
+                </nav>
+                <!--hamburger-->
+                <div class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                      </svg>
+                </div>
+            </header> 
+            <!--the header ends-->
+
+            <!--main starts here-->
+            <main class="main-container">
+
+                <!--The Banner Starts-->
+                <section class="section-banner">
+                    <div class="title-block">
+                        <h1 class="get-schooled">Get schooled</h1> <!--PAGE TITLE-->
+                        <p class="smiles">SMILES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GRIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LAUGH</p>
+                        <button>REGISTER FOR FREE</button>
+                    </div>
+
+                    <div class="tutors-block-container">
+                        <h2><span>Learn</span> from the pros</h2>
+                        <div class="tutors-block">
+                            <div class="tutor-1">
+                                <img src="assets/1.png" alt="IMAGE">
+                                <h3>Philip Massey</h3>
+                                <p>« Smile of the year » <br>2018 - 2019
+                                </p>
+                            </div>
+
+                            <div class="tutor-2">
+                                <img src="assets/3.png" alt="IMAGE">
+                                <h3>Nannie Lawrence</h3>
+                                <p>Best « little smile » <br> 2017</p>
+                            </div>
+
+                            <div class="tutor-3">
+                                <img src="assets/2.png" alt="IMAGE">
+                                <h3>Bruce Walters</h3>
+                                <p>Best « Friend Smile » <br>live performance 2019</p>
+                            </div>
+
+                            <div class="tutor-4">
+                                <img src="assets/4.png" alt="IMAGE">
+                                <h3>Henry Hughes</h3>
+                                <p>« 24h smiles » <br>winner 2016 - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+                <!--The Banner Ends-->
+            </section>
+                <!--The Quote Starts-->
+                <section class="section-quote">
+                    <div class="quote-author-block">
+                        <img src="assets/5.png" alt="IMAGE">
+                        
+                        <div class="quote-block">
+                            <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better <br> place to learn smiling. And it’s so fun!
+                            </blockquote>
+                            <p>Person Name</p>
+                            <p>Weather presenter</p>
+                        </div>
+                    </div>
+                </section> 
+                <!--The Quote Ends-->
+                
+                <!--VIDEO SECTION STARTS-->
+                <section class="section-video"> 
+                    <h1>Most <span>popular</span> tutorials</h1>
+
+                    <div class="video-container">
+                        <div class="video-block"> <!--first video block starts-->
+                            <img class="play" src="assets/play.png" alt="image">
+                            <img class="vid-img" src="assets/9.png" alt="IMAGE">
+                            <h2>Diagonal Smile</h2>
+                            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                            <div class="vid-author"> <!--a block for the author-->
+                                <img class="author-img" src="assets/1.png" alt="IMAGE">
+                                <h3>Phillip Massey</h3>
+                            </div>
+
+                            <div class="rating-container"> <!--a block for the rating-->
+                                <div class="rating"> <!---images for rating-->
+                                    <img src="assets/rating.png" alt="IMAGE">
+                                </div>
+                                <p class="min">8 min</p>
+                            </div>
+                        </div> <!--first video block ends-->
+
+                        <div class="video-block"> <!--second video block starts-->
+                            <img class="play" src="assets/play.png" alt="image">
+                            <img class="vid-img" src="assets/7.png" alt="IMAGE">
+                            <h2>Sad Smile</h2>
+                            <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
+
+                            <div class="vid-author"> <!--a block for the author-->
+                                <img class="author-img" src="assets/1.png" alt="IMAGE">
+                                <h3>Philip Massey</h3>
+                            </div>
+
+                            <div class="rating-container"> <!--a block for the rating-->
+                                <div class="rating"> <!---images for rating-->
+                                    <img src="assets/rating.png" alt="IMAGE">
+                                </div>
+                                <p>8 min</p>
+                            </div>
+                        </div><!--second video block ends-->
+
+                        <div class="video-block"><!--third video block starts-->
+                            <img class="play" src="assets/play.png" alt="image">
+                            <img class="vid-img" src="assets/8.png" alt="IMAGE">
+                            <h2>Natural Smile</h2>
+                            <P>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</P>
+
+                            <div class="vid-author"> <!--a block for the author-->
+                                <img class="author-img" src="assets/1.png" alt="IMAGE">
+                                <h3>Philip Massey</h3>
+                            </div>
+
+                            <div class="rating-container"> <!--a block for the rating-->
+                                <div class="rating"> <!---images for rating-->
+                                    <img src="assets/rating.png" alt="IMAGE">
+                                </div>
+                                <p>8 min</p>
+                            </div>
+                        </div><!--third video block ends-->
+
+                        <div class="video-block"> <!--fourth video block starts-->
+                            <img class="play" src="assets/play.png" alt="image">
+                            <img class="vid-img" src="assets/6.png" alt="IMAGE">
+                            <h2>Happy Smile</h2>
+                            <P>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</P>
+
+                            <div class="vid-author"> <!--a block for the author-->
+                                <img class="author-img" src="assets/1.png" alt="IMAGE">
+                                <h3>Philip Massey</h3>
+                            </div>
+
+                            <div class="rating-container"> <!--a block for the rating-->
+                                <div class="rating"> <!---images for rating-->
+                                    <img src="assets/rating.png" alt="IMAGE">                            
+                                </div>
+                                <p>8 min</p>
+                            </div>
+                        </div> <!--fourth video block ends-->
+                </div>
+                </section> <!--VIDEO SECTION ENDS-->
+
+                <section class="section-membership"> <!--the membership section starts here-->
+                    <h1> <span>Free</span> membership</h1>
+                    <div class="membership-container">
+                        <div class="member-block">
+                            <img src="assets/smile.png" alt="IMAGE">
+                            <h2>Lorem ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="member-block">
+                            <img src="assets/smile.png" alt="IMAGE">
+                            <h2>Lorem ipsum</h2>
+                            <P>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</P>
+                        </div>
+
+                        <div class="member-block">
+                            <img src="assets/smile.png" alt="IMAGE">
+                            <h2>Lorem ipsum</h2>
+                            <P>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</P>
+                        </div>
+
+                        <div class="member-block">
+                            <img src="assets/smile.png" alt="IMAGE">
+                            <h2>Lorem ipsum</h2>
+                            <P>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</P>
+                        </div>
+                    </div>
+                    <button>REGISTER FOR FREE</button>
+
+                </section> <!--the membership section ends here-->
+
+                <section class="section-faq"> <!--FAQ section starts here-->
+                    <h1>F.A.Q.</h1>
+                    <div class="faq-block"> <!--FAQ BLOCK-->
+                        <div class="faq1"> <!--FIRST ROW BLOCK-->
+                            <div> <!--item block-->
+                                <h2>How does this work?</h2>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                    <br> do eiusmod tempor incididunt ut labore et dolore magna 
+                                    <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                    <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                    <br> occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    <br> deserunt mollit anim id est laborum.</P>
+                            </div>
+                            <div><!--item block-->
+                                <h2>How does this work?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                    <br> do eiusmod tempor incididunt ut labore et dolore magna 
+                                    <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                    <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                    <br> occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    <br> deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq2"> <!--SECOND ROW BLOCK-->
+                            <div> <!--item lock-->
+                                <h2>How does this work?</h2>
+                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                    <br> do eiusmod tempor incididunt ut labore et dolore magna 
+                                    <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                    <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                    <br> occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    <br> deserunt mollit anim id est laborum.</P>
+                            </div>
+                            <div><!--item block-->
+                                <h2>How does this work?</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+                                    <br> do eiusmod tempor incididunt ut labore et dolore magna 
+                                    <br> aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    <br> ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <br> Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                                    <br> cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                    <br> occaecat cupidatat non proident, sunt in culpa qui officia 
+                                    <br> deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div><!--FAQ BLOCK ENDS-->
+
+                </section><!--FAQ section ends here-->
+            </main> <!--Main ends-->
+
+            <footer>
+                <div class="footer-container">
+                    <div class="logo-and-socials"> <!--this is a row block-->
+                        <img src="assets/logo.png" alt="LOGO">
+                        <div>
+                            <a href="https://facebook.com"><img src="assets/facebook.png" alt="IMAGE"></a>
+                            <a href="htsps://twitter.com"><img src="assets/twitter.png" alt="IMAGE"></a>
+                            <a href="https://instagram.com"><img src="assets/instagram.png" alt="IMAGE"></a>
+                        </div>
+                    </div>
+
+                    <p>©smileschool 2020</p>
+                </div>
+            </footer>
+    </body>
+</html>
